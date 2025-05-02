@@ -66,18 +66,19 @@ export default function HomePage() {
           </h1>
         </div>
         <FeatureCards items={featureBoxes} />
-      </main>
-      <footer className="py-4 px-6 text-center text-sm text-gray-500">
-        <div className="mb-4">
-          <p className="flex items-center justify-center gap-2">
-            <span className="text-xl text-gray-700 italic">
-              &quot;Paper Stacks are for researchers&quot;
-            </span>
-            <span className="text-xl text-gray-500 italic">
-              -Rodrigo Rosas-Bertolini
-            </span>
+        <div className="max-w-4xl mx-auto mt-12 text-base text-black text-left bg-white bg-opacity-80 p-6 rounded-lg border border-black">
+          <h2 className="text-2xl font-semibold mb-4 text-center">Paper Stacks are for researchers</h2>
+          <p>
+            Academic research publishing is dominated by a few publishing houses forming a non-collusive oligopoly, extracting undue funds from the research ecosystem and enforcing outdated paradigms to protect their business model moat. The broader research community has shown strong motivation to move away from this system, making the industry ripe for disruption.<br /><br />
+            PaperStacks aims to usher in a new paradigm of research publishing by removing monetary barriers through a diamond open-access model. Enabled by emerging technologies such as large language models (LLMs), it moves beyond historically inherited structures—like prestige-based gatekeeping, editorial bottlenecks, and opaque evaluation systems—that hinder efficiency, limit open communication, and degrade the researcher experience.<br /><br />
+            PaperStacks operates on a token economy where users earn tokens by reviewing submissions and spend them to publish their own work. Inspired by mutual rewarding systems in gaming, our incentive model encourages rigorous, high-quality reviews over volume. A personalized feed suggests papers aligned with users&apos; expertise, using semantic analysis of their publication history. This opt-in process empowers reviewers to engage meaningfully while easing reviewer sourcing and improving overall participation.<br /><br />
+            Unlike traditional journals where editors act as centralized gatekeepers, PaperStacks follows the Publish–Review–Curate model. All submissions are published immediately, then reviewed. Each paper is accompanied by a collaborative reviewer assessment that evaluates the strength of evidence and novelty, replacing binary accept/reject outcomes with a transparent, bidimensional evaluation. Editorial intervention is minimal and reactive, limited to resolving disputes. Editors are elevated users who are rewarded with tokens and platform privileges, not hierarchical authority. This redesign—combining incentive-based workflows, reviewer matching, and decentralized governance—delivers unprecedented efficiency and scalability.<br /><br />
+            Initial funding for the platform will be raised through token sales to universities and research institutions, which will also seed the token economy. Long-term sustainability is planned through a freemium plan offering additional features and visibility, though publishing and reviewing remain free.
+            <span className="block text-right text-base text-gray-500 mt-6">-Rodrigo Rosas-Bertolini</span>
           </p>
         </div>
+      </main>
+      <footer className="py-4 px-6 text-center text-sm text-gray-500">
         <p>© {new Date().getFullYear()} PaperStacks. All rights reserved.</p>
       </footer>
     </div>
