@@ -1,2 +1,1 @@
-# paperstacks.pub
-watch me pub
+Ask me if you are curious fam.
