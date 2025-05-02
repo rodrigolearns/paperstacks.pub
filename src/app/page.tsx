@@ -67,7 +67,7 @@ export default function HomePage() {
         </div>
         <FeatureCards items={featureBoxes} />
         <div className="max-w-4xl mx-auto mt-12 text-base text-black text-left bg-white bg-opacity-80 p-6 rounded-lg border border-black">
-          <h2 className="text-2xl font-semibold mb-4 text-center">Paper Stacks are for researchers</h2>
+          <h2 className="text-2xl text-gray-500 font-semibold mb-4 text-center italic">" Remember, paper stacks are for researchers "</h2>
           <p>
             Academic research publishing is dominated by a few publishing houses forming a non-collusive oligopoly, extracting undue funds from the research ecosystem and enforcing outdated paradigms to protect their business model moat. The broader research community has shown strong motivation to move away from this system, making the industry ripe for disruption.<br /><br />
             PaperStacks aims to usher in a new paradigm of research publishing by removing monetary barriers through a diamond open-access model. Enabled by emerging technologies such as large language models (LLMs), it moves beyond historically inherited structures—like prestige-based gatekeeping, editorial bottlenecks, and opaque evaluation systems—that hinder efficiency, limit open communication, and degrade the researcher experience.<br /><br />
