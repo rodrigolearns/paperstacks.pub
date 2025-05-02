@@ -1,7 +1,15 @@
 import { FaRegNewspaper, FaRegEye } from "react-icons/fa";
 import { LuWallet, LuPencilLine } from "react-icons/lu";
+import Image from "next/image";
 
-const FeatureCards = ({ items }: { items: any[] }) => (
+// Define a type for feature card items
+type FeatureItem = {
+  title: string;
+  description: string;
+  icon: React.ReactNode;
+};
+
+const FeatureCards = ({ items }: { items: FeatureItem[] }) => (
   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-4xl mx-auto">
     {items.map((item, index) => (
       <div
@@ -19,7 +27,7 @@ const FeatureCards = ({ items }: { items: any[] }) => (
 );
 
 export default function HomePage() {
-  const featureBoxes = [
+  const featureBoxes: FeatureItem[] = [
     {
       title: "Reviewing is hard work\nand it should be rewarded",
       description: "So we reward reviewers in tokens",
@@ -46,9 +54,11 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-50">
       <main className="container mx-auto py-12 px-4">
         <div className="text-center mb-16">
-          <img
+          <Image
             src="/PaperStacks-Icon-Black.svg"
             alt="PaperStacks Logo"
+            width={144}
+            height={144}
             className="w-36 h-36 mx-auto mb-8"
           />
           <h1 className="text-4xl font-bold mb-4 text-black">
@@ -61,7 +71,7 @@ export default function HomePage() {
         <div className="mb-4">
           <p className="flex items-center justify-center gap-2">
             <span className="text-xl text-gray-700 italic">
-              "Paper Stacks are for researchers"
+              &quot;Paper Stacks are for researchers&quot;
             </span>
             <span className="text-xl text-gray-500 italic">
               -Rodrigo Rosas-Bertolini
