@@ -76,6 +76,10 @@ export default function HomePage() {
             <span className="block text-right text-base text-gray-500 mt-6">-Rodrigo Rosas-Bertolini</span>
           </p>
         </div>
+        <div className="max-w-4xl mx-auto mt-8 mb-12 p-6 bg-yellow-50 border-2 border-yellow-400 rounded-lg text-center">
+          <div className="text-2xl font-bold text-orange-600 mb-2">Seeking co-founders!</div>
+          <div className="text-lg text-black">Contact: <a href="mailto:rodrigo.rosas3@gmail.com" className="underline">Rodrigo.rosas3@gmail.com</a></div>
+        </div>
       </main>
       <footer className="py-4 px-6 text-center text-sm text-gray-500">
         <p>© {new Date().getFullYear()} PaperStacks. All rights reserved.</p>
