@@ -4,61 +4,7 @@ import { LuWallet, LuPencilLine } from "react-icons/lu";
 import Image from "next/image";
 import Head from "next/head";
 
-// Define a type for feature card items
-type FeatureItem = {
-  title: string;
-  description: string;
-  icon: React.ReactNode;
-};
-
-const FeatureCards = ({ items, title }: { items: FeatureItem[], title: string }) => (
-  <div className="w-full max-w-4xl mx-auto bg-white border border-black rounded-lg overflow-hidden">
-    <div className="text-2xl font-bold text-black mb-6 text-center pt-6">{title}</div>
-    {items.map((item, index) => (
-      <div
-        key={index}
-        className="flex flex-row items-center text-center px-4 py-4"
-      >
-        <div className="font-bold text-base text-black whitespace-pre-line flex-1">{item.title}</div>
-        <div className="mx-4 flex-shrink-0">{item.icon}</div>
-        <div className="text-black whitespace-pre-line flex-1">{item.description}</div>
-      </div>
-    ))}
-  </div>
-);
-
 export default function HomePage() {
-  const whatWeDoCards: FeatureItem[] = [
-    {
-      title: "Reviewing is hard work and it should be rewarded",
-      description: "So we reward reviewers in tokens",
-      icon: <LuWallet className="h-8 w-8 text-purple-600" />,
-    },
-    {
-      title: "Publishing a peer-reviewed paper should be free",
-      description: "So you can spend tokens to hire peer reviews",
-      icon: <LuPencilLine className="h-8 w-8 text-green-600" />,
-    },
-    {
-      title: "Peer review should be transparent",
-      description: "So we showcase reviews and reviewers' metrics on each paper",
-      icon: <FaRegEye className="h-8 w-8 text-blue-600" />,
-    },
-  ];
-
-  const whatWeDontDoCards: FeatureItem[] = [
-      {
-      title: "Editors should not gatekeep science",
-      description: "So we don't let editors manage the peer review process, researchers do",
-      icon: <FaRegHandshake className="h-10 w-10 text-yellow-600" />,
-    },
-    {
-      title: "Scientific knowledge should be free",
-      description: "So we make it free.\nF**k paywalls",
-      icon: <FaRegNewspaper className="h-8 w-8 text-[#EB406D]" />,
-    },
-  ];
-
   return (
     <>
       <Head>
@@ -125,7 +71,7 @@ export default function HomePage() {
               <div className="flex flex-row items-center text-center px-4 py-6 gap-8">
                 <div className="flex-1 text-base text-black what_we_think_column mr-4">Editors should not gatekeep science</div>
                 <div className="mx-4 flex-shrink-0 svg_column"><FaRegHandshake className="h-10 w-10 text-yellow-600" /></div>
-                <div className="flex-1 text-base text-black what_we_do_column ml-4">So editors don't manage the peer review process, researchers do</div>
+                <div className="flex-1 text-base text-black what_we_do_column ml-4">So editors don&apos;t manage the peer review process, researchers do</div>
               </div>
               {/* 3 */}
               <div className="flex flex-row items-center text-center px-4 py-6 gap-8">
@@ -143,7 +89,7 @@ export default function HomePage() {
               <div className="flex flex-row items-center text-center px-4 py-6 gap-8">
                 <div className="flex-1 text-base text-black what_we_think_column mr-4">Peer review should be transparent</div>
                 <div className="mx-4 flex-shrink-0 svg_column"><FaRegEye className="h-8 w-8 text-blue-600" /></div>
-                <div className="flex-1 text-base text-black what_we_do_column ml-4">So we showcase reviews and reviewers' metrics on each paper</div>
+                <div className="flex-1 text-base text-black what_we_do_column ml-4">So we showcase reviews and reviewers&apos; metrics on each paper</div>
               </div>
             </div>
           </section>
