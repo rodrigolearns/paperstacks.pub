@@ -3,6 +3,8 @@ import { FaRegHandshake } from "react-icons/fa6";
 import { LuWallet, LuPencilLine } from "react-icons/lu";
 import Image from "next/image";
 import Head from "next/head";
+import { FaLinkedin } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 
 export default function HomePage() {
   return (
@@ -48,9 +50,20 @@ export default function HomePage() {
             <div className="max-w-4xl mx-auto mb-8 p-6 bg-white border border-black rounded-lg text-center text-lg text-black">
               The research publishing platform that replaces editorial gatekeeping, with a free market where <b>we the researchers</b> choose how our work is shared
             </div>
-            <div className="max-w-4xl mx-auto mb-6 p-6 bg-yellow-50 border-2 border-yellow-400 rounded-lg flex flex-row items-center justify-center gap-4">
-              <div className="text-2xl font-bold text-orange-600">Seeking co-founders!</div>
-              <div className="text-lg text-black">Contact: <a href="mailto:rodrigo.rosas3@gmail.com" className="underline">Rodrigo.rosas3@gmail.com</a></div>
+            <div className="max-w-4xl mx-auto mb-6 p-6 bg-yellow-50 border-2 border-yellow-400 rounded-lg flex flex-col items-center justify-center gap-2">
+              <div className="text-2xl font-bold text-orange-600 text-center mb-2">Seeking co-founders!</div>
+              <div className="flex flex-row items-center gap-2 text-lg text-black justify-center">
+                <span>Contact me on</span>
+                <a href="https://www.linkedin.com/in/rodrigo-rosas-bertolini-6a0743111" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-black hover:text-blue-700">
+                  <FaLinkedin className="w-6 h-6 text-blue-700" />
+                  <span className="underline">LinkedIn</span>
+                </a>
+                <span>or</span>
+                <span className="flex items-center gap-1">
+                  <SiGmail className="w-6 h-6 text-red-600" />
+                  <span className="underline">rodrigo.rosas3@gmail.com</span>
+                </span>
+              </div>
             </div>
           </div>
           <section className="mb-12">
