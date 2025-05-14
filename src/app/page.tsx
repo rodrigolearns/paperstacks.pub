@@ -52,16 +52,16 @@ export default function HomePage() {
             </div>
             <div className="max-w-4xl mx-auto mb-6 p-6 bg-yellow-50 border-2 border-yellow-400 rounded-lg flex flex-col items-center justify-center gap-2">
               <div className="text-2xl font-bold text-orange-600 text-center mb-2">Seeking co-founders!</div>
-              <div className="flex flex-row items-center gap-2 text-lg text-black justify-center">
+              <div className="flex flex-col sm:flex-row items-center gap-2 text-lg text-black justify-center w-full">
                 <span>Contact me on</span>
                 <a href="https://www.linkedin.com/in/rodrigo-rosas-bertolini-6a0743111" target="_blank" rel="noopener noreferrer" className="flex items-center gap-1 text-black hover:text-blue-700">
                   <FaLinkedin className="w-6 h-6 text-blue-700" />
                   <span className="underline">LinkedIn</span>
                 </a>
                 <span>or</span>
-                <span className="flex items-center gap-1">
+                <span className="flex items-center gap-1 break-all">
                   <SiGmail className="w-6 h-6 text-red-600" />
-                  <span className="underline">rodrigo.rosas3@gmail.com</span>
+                  <span className="underline break-all">rodrigo.rosas3@gmail.com</span>
                 </span>
               </div>
             </div>
